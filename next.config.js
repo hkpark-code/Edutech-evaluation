@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   // Windows 11 compatibility
   reactStrictMode: true,
 
@@ -22,11 +21,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
-
-
-
-
-
-
-
+module.exports = nextConfig;

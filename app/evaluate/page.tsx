@@ -2698,12 +2698,12 @@ export default function EvaluatePage() {
             // 기술적 가치 분석 (공통 영역)
             const techValueStrengths: string[] = [];
             const techValueWeaknesses: string[] = [];
-            if ((technicalValue.commonTech?.rndCapability ?? 0) >= 3) techValueStrengths.push('R&D 역량');
-            else if ((technicalValue.commonTech?.rndCapability ?? 0) <= 1) techValueWeaknesses.push('R&D 역량 강화');
+            if ((technicalValue.commonTech?.rdCapability ?? 0) >= 3) techValueStrengths.push('R&D 역량');
+            else if ((technicalValue.commonTech?.rdCapability ?? 0) <= 1) techValueWeaknesses.push('R&D 역량 강화');
             if ((technicalValue.commonTech?.technicalDifferentiation ?? 0) >= 3) techValueStrengths.push('기술적 차별성');
             else if ((technicalValue.commonTech?.technicalDifferentiation ?? 0) <= 1) techValueWeaknesses.push('기술적 차별성 확보');
-            if ((technicalValue.commonTech?.systemIntegration ?? 0) >= 3) techValueStrengths.push('시스템 연계 능력');
-            else if ((technicalValue.commonTech?.systemIntegration ?? 0) <= 1) techValueWeaknesses.push('시스템 연계 능력 강화');
+            if ((technicalValue.commonTech?.dataUtilization ?? 0) >= 3) techValueStrengths.push('데이터 활용');
+            else if ((technicalValue.commonTech?.dataUtilization ?? 0) <= 1) techValueWeaknesses.push('데이터 활용 강화');
             
             if (techValuePercent >= 70) {
               recommendations.push({
@@ -2731,12 +2731,12 @@ export default function EvaluatePage() {
             // 사회적 가치 분석
             const socialStrengths: string[] = [];
             const socialWeaknesses: string[] = [];
-            if ((socialValue.socialResponsibility?.lowSpecSupport ?? 0) >= 2) socialStrengths.push('저사양 기기 지원');
-            else if ((socialValue.socialResponsibility?.lowSpecSupport ?? 0) <= 1) socialWeaknesses.push('저사양 기기 지원 강화');
-            if ((socialValue.socialResponsibility?.offlineSupport ?? 0) >= 2) socialStrengths.push('오프라인 모드 지원');
-            else if ((socialValue.socialResponsibility?.offlineSupport ?? 0) <= 1) socialWeaknesses.push('오프라인 모드 지원');
-            if ((socialValue.ethicsCompliance?.dataEthics ?? 0) >= 3) socialStrengths.push('데이터 윤리');
-            else if ((socialValue.ethicsCompliance?.dataEthics ?? 0) <= 1) socialWeaknesses.push('데이터 윤리 강화');
+            if ((socialValue.socialResponsibility?.lowSpecDeviceSupport ?? 0) >= 2) socialStrengths.push('저사양 기기 지원');
+            else if ((socialValue.socialResponsibility?.lowSpecDeviceSupport ?? 0) <= 1) socialWeaknesses.push('저사양 기기 지원 강화');
+            if ((socialValue.socialResponsibility?.offlineModeSupport ?? 0) >= 2) socialStrengths.push('오프라인 모드 지원');
+            else if ((socialValue.socialResponsibility?.offlineModeSupport ?? 0) <= 1) socialWeaknesses.push('오프라인 모드 지원');
+            if ((socialValue.ethicsCompliance?.dataAiEthics ?? 0) >= 3) socialStrengths.push('데이터 윤리');
+            else if ((socialValue.ethicsCompliance?.dataAiEthics ?? 0) <= 1) socialWeaknesses.push('데이터 윤리 강화');
             if ((socialValue.ecosystemBuilding?.educationPartnership ?? 0) >= 2) socialStrengths.push('교육 파트너십');
             else if ((socialValue.ecosystemBuilding?.educationPartnership ?? 0) <= 1) socialWeaknesses.push('교육 파트너십 확대');
             

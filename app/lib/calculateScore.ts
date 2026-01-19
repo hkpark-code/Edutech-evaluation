@@ -361,11 +361,16 @@ export function calculatePublicEducationScore(
   // 각 BM별 기술 성과물 점수 계산
   let technicalOutputScore = 0;
   let totalBmWeight = 0;
-  
+
   const techOutput = technicalValue.bmCapability.technicalOutput;
-  
+
+  // bmRatios를 객체로 변환
+  const bmRatiosMap = Array.isArray(bmRatios)
+    ? bmRatios.reduce((acc, item) => ({ ...acc, [item.model]: item.revenueRatio / 100 }), {} as Record<string, number>)
+    : bmRatios;
+
   selectedBMs.forEach((bm: string) => {
-    const ratio = bmRatios[bm] || (1 / selectedBMs.length);
+    const ratio = bmRatiosMap[bm] || (1 / selectedBMs.length);
     let bmScore = 0;
     
     switch (bm) {
