@@ -3,21 +3,19 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Windows 11 compatibility
   reactStrictMode: true,
-  
-  // Performance optimizations
-  swcMinify: true,
-  
+
   // TypeScript and ESLint
   typescript: {
     ignoreBuildErrors: false,
   },
-  eslint: {
-    ignoreDuringBuilds: false,
+
+  // GitHub Pages configuration
+  output: 'export',
+  basePath: '/Edutech-evaluation',
+  images: {
+    unoptimized: true,
   },
-  
-  // Output configuration
-  output: 'standalone',
-  
+
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ['react', 'react-dom'],
