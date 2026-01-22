@@ -849,14 +849,14 @@ export const publicEducationCriteria = {
               isChecklist: true,
               isBmLinked: true,
               checklistItems: [
-                // 플랫폼형 (platform) - 6개
+                // 플랫폼형 (platform) - 5개
                 { description: '데이터베이스 설계 및 관리 전문 인력을 보유함', score: 1, bmTypes: ['platform'] },
                 { description: '클라우드 인프라(AWS, Azure 등) 관리 인력을 보유함', score: 1, bmTypes: ['platform'] },
                 { description: 'UI/UX 디자인 및 사용자 환경 설계 전문 인력을 보유함', score: 1, bmTypes: ['platform'] },
                 { description: '보안 관리(정보보호기사, ISMS 등) 전문 인력을 보유함', score: 1, bmTypes: ['platform'] },
                 { description: '데이터 분석 및 AI 응용 역량을 보유한 인력을 보유함', score: 1, bmTypes: ['platform'] },
-                { description: '교육과정 분석 및 교수설계(ID) 역량을 가진 인력을 보유함', score: 1, bmTypes: ['platform'] },
-                // 콘텐츠형 (content) - 4개
+                // 콘텐츠형 (content) - 5개
+                { description: '교육과정 분석 및 교수설계(ID) 역량을 가진 인력을 보유함', score: 1, bmTypes: ['content'] },
                 { description: '멀티미디어 제작 및 영상 편집 전문 인력을 보유함', score: 1, bmTypes: ['content'] },
                 { description: 'UI/UX 디자인 관련 전공 또는 자격을 보유한 인력을 보유함', score: 1, bmTypes: ['content'] },
                 { description: '데이터 분석 및 학습효과 검증 인력을 보유함', score: 1, bmTypes: ['content'] },
