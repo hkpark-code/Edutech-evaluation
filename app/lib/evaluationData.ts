@@ -861,13 +861,12 @@ export const publicEducationCriteria = {
                 { description: 'UI/UX 디자인 관련 전공 또는 자격을 보유한 인력을 보유함', score: 1, bmTypes: ['content'] },
                 { description: '데이터 분석 및 학습효과 검증 인력을 보유함', score: 1, bmTypes: ['content'] },
                 { description: '품질관리(QA) 및 검수 체계를 운영함', score: 1, bmTypes: ['content'] },
-                // 디바이스형 (device) - 6개
+                // 디바이스형 (device) - 5개
                 { description: 'HW 설계 및 회로 개발 인력을 보유함', score: 1, bmTypes: ['device'] },
                 { description: 'SW·펌웨어 개발 인력을 보유함', score: 1, bmTypes: ['device'] },
                 { description: '제조·공정 관리 인력을 보유함', score: 1, bmTypes: ['device'] },
                 { description: '품질관리 및 테스트(QA) 인력을 보유함', score: 1, bmTypes: ['device'] },
                 { description: '유지보수 및 AS 체계를 운영함', score: 1, bmTypes: ['device'] },
-                { description: '교육 전문(교원자격 보유·교육학 전공) 인력을 보유함', score: 1, bmTypes: ['device'] },
                 // 서비스형 (service) - 5개
                 { description: '교육 전문(교원자격 보유·교육학 전공) 인력을 보유함', score: 1, bmTypes: ['service'] },
                 { description: '교육 운영 및 현장 관리 전담 인력을 보유함', score: 1, bmTypes: ['service'] },
